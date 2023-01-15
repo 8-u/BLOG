@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: ture
 relative_link: false
 future: true
 highlight:
@@ -132,9 +132,9 @@ live2d:
     use: live2d-widget-model-koharu # npm-module package name
     # use: https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json # 你的自定义 url
   display:
-    position: left #控制看板娘位置
-    width: 150 #控制看板娘大小
-    height: 300 #控制看板娘大小
+    position: right #控制看板娘位置
+    width: 100 #控制看板娘大小
+    height: 600 #控制看板娘垂直位置
   mobile:
     show: false # 手机中是否展示
 
@@ -150,7 +150,7 @@ baidusitemap:
     path: baidusitemap.xml
 
 # https://github.com/hexojs/hexo-generator-feed
-#Feed Atom
+#Feed Atom 
 feed:
     type: atom
     path: atom.xml
@@ -170,7 +170,7 @@ bangumi: # 追番设置
   source: bili
   bgmInfoSource: 'bgmApi'
   path:
-  vmid: 1248683306
+  vmid: 759307
   title: '追番列表'
   quote: '生命不息，追番不止！'
   show: 1
@@ -193,7 +193,7 @@ bangumi: # 追番设置
 cinema: # 追剧设置
   enable: true
   path:
-  vmid: 1248683306
+  vmid: 759307
   title: '追剧列表'
   quote: '生命不息，追剧不止！'
   show: 1
@@ -209,16 +209,16 @@ cinema: # 追剧设置
   extra_options:
     key: value
 
-# 百度主动推送
-# https://github.com/huiwang/hexo-baidu-url-submit
-baidu_url_submit:
-  count: 1        # 提交最新的多少个链接
-  host: blog.anzhiy.cn  # 在百度站长平台中添加的域名
-  token: Rgem9kAECSLflQq6   # 秘钥
-  path: baidu_urls.txt   # 文本文档的地址， 新链接会保存在此文本文档里
 
-# APlayer
-# https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
-aplayer:
-  meting: true
-  asset_inject: false
+#aplayer
+aplayer: 
+  script_dir: js                      # Public 目录下脚本目录路径，默认: 'assets/js'
+  style_dir: css                         # Public 目录下样式目录路径，默认: 'assets/css'
+  #cdn: http://xxx/aplayer.min.js                # 引用 APlayer.js 外部 CDN 地址 (默认不开启)
+  #style_cdn: http://xxx/aplayer.min.css         # 引用 APlayer.css 外部 CDN 地址 (默认不开启)
+  meting: true                                  # MetingJS 支持
+  #meting_api: http://xxx/api.php                # 自定义 Meting API 地址
+  #meting_cdn: http://xxx/Meing.min.js           # 引用 Meting.js 外部 CDN 地址 (默认不开启)
+  asset_inject: false                          # 自动插入 Aplayer.js 与 Meting.js 资源脚本, 默认开启
+  #externalLink: http://xxx/aplayer.min.js       # 老版本参数，功能与参数 cdn 相同meting: true
+

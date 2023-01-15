@@ -3,15 +3,17 @@
 # --------------------------------------
 
 menu:
-  # Home: / || fas fa-home
-  # Archives: /archives/ || fas fa-archive
-  # Tags: /tags/ || fas fa-tags
-  # Categories: /categories/ || fas fa-folder-open
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
-  # Link: /link/ || fas fa-link
-  # About: /about/ || fas fa-heart
+  主页: / || fas fa-home
+  追番: /bangumis/index.html || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  列表||fas fa-list:
+    音乐: /music/ || fas fa-music
+    电影: /movies/ || fas fa-video
+  留言板: /comments/ || fas fa-envelope
+  链接: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -76,21 +78,21 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: 
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673787718207.png
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img:
+index_img: http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673782851569.png
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673787936896.png
 
 # The banner image of archive page
 archive_img:
@@ -123,7 +125,15 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673708126853.png
+     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673708108373.png
+     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673703790846.png
+     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673786096911.png
+     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673788325476.png
+     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673788305403.png
+     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673788286055.png
+     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673788276020.png
+     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673788266140.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -518,7 +528,8 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: 
+  - url(https://s2.loli.net/2023/01/14/GyeDFsnMCrQkSYf.jpg)
 
 # Footer Background
 footer_bg: false
@@ -669,7 +680,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/8-u
   card_announcement:
     enable: true
     content: This is my Blog
@@ -751,7 +762,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: true
 
 # Don't modify the following settings unless you know how they work (非必要請不要修改 )
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -806,14 +817,14 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: ture
   exclude:
     # - xxxx
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -848,12 +859,13 @@ lazyload:
 # See https://github.com/JLHwung/hexo-offline
 # ---------------
 # pwa:
-#   enable: false
-#   manifest: /pwa/manifest.json
-#   apple_touch_icon: /pwa/apple-touch-icon.png
-#   favicon_32_32: /pwa/32.png
-#   favicon_16_16: /pwa/16.png
-#   mask_icon: /pwa/safari-pinned-tab.svg
+#   enable: true
+#   manifest: /manifest.json
+#   theme_color: "#3b70fc"
+#   apple_touch_icon: /img/siteicon/128.png
+#   favicon_32_32: /img/siteicon/32.png
+#   favicon_16_16: /img/siteicon/16.png
+#   mask_icon: /img/siteicon/128.png
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -871,14 +883,94 @@ Open_Graph_meta:
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
 
+
+# wowjs
+# see https://www.npmjs.com/package/hexo-butterfly-wowjs
+wowjs:
+  enable: true #控制动画开关。true是打开，false是关闭
+  priority: 10 #过滤器优先级
+  mobile: true #移动端是否启用，默认移动端禁用
+  animateitem:
+    - class: recent-post-item #必填项，需要添加动画的元素的class
+      style: animate__zoomIn #必填项，需要添加的动画
+      duration: 1.5s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+      delay: 200ms #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+      offset: 30 #选填项，开始动画的距离（相对浏览器底部）
+      iteration: 1 #选填项，动画重复的次数
+    - class: card-widget
+      style: animate__zoomIn
+      delay: 200ms
+    # - class: flink-list-card
+    #   style: wowpanels
+    - class: flink-list-card
+      style: animate__flipInY
+      duration: 3s
+    - class: flink-list-card
+      style: animate__animated
+      duration: 3s
+    - class: article-sort-item
+      style: animate__slideInRight
+      duration: 1.5s
+    - class: site-card
+      style: animate__flipInY
+      duration: 3s
+    - class: site-card
+      style: animate__animated
+      duration: 3s
+  animate_css: https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css
+  wow_js: https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js
+  wow_init_js: https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js
+
+# 留言板
+# envelope_comment
+# see https://akilar.top/posts/e2d3c450/
+# envelope_comment
+# see https://akilar.top/posts/e2d3c450/
+envelope_comment:
+  enable: true #控制开关
+  custom_pic:
+    cover: https://cdn.cbd.int//hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://cdn.cbd.int/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://cdn.cbd.int/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://cdn.cbd.int/hexo-butterfly-envelope/lib/after.png # 信封后半部分
+  message: #信笺正文，多行文本，写法如下
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，都可以告诉我哦~
+  bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
+  height: #1050px，信封划出的高度
+  path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  front_matter: #【可选】comments页面的 front_matter 配置
+    title: 留言板
+    comments: true
+
+
+
+
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    # Aplayer 的全局吸底音乐标签收起隐藏
+    - '<style type="text/css">
+        .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+          left: -66px !important;
+          /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+        }
+
+        .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+          left: 0 !important;
+          /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+        }
+      </style>'
+
+   
   bottom:
     # - <script src="xxxx"></script>
+    - <div class="aplayer no-destroy" data-id="8060201589" data-server="netease" data-type="playlist"   data-order="list" data-fixed="true" data-preload="auto" data-autoplay="true" data-mutex="true" ></div>
 
 # CDN
 # Don't modify the following settings unless you know how they work
