@@ -10,7 +10,7 @@ menu:
   分类: /categories/ || fas fa-folder-open
   列表||fas fa-list:
     音乐: /music/ || fas fa-music
-    电影: /movies/ || fas fa-video
+    # 电影: /movies/ || fas fa-video
   留言板: /comments/ || fas fa-envelope
   链接: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
@@ -78,7 +78,7 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: 
+favicon: http://roj0q7xhu.hn-bkt.clouddn.com/1673797654753.png
 
 # Avatar (頭像)
 avatar:
