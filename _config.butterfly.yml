@@ -18,7 +18,7 @@ menu:
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -78,21 +78,22 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: http://roj0q7xhu.hn-bkt.clouddn.com/1673797654753.png
+favicon: https://macimg.com/image/UG6Tbp
 
 # Avatar (頭像)
 avatar:
-  img: http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673787718207.png
+  img: https://c2.im5i.com/2023/01/16/YsfIS.png
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673782851569.png
+index_img: https://c2.im5i.com/2023/01/16/YsVCD.png
+
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673787936896.png
+default_top_img: https://c2.im5i.com/2023/01/16/YslkL.png
 
 # The banner image of archive page
 archive_img:
@@ -125,15 +126,12 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673708126853.png
-     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673708108373.png
-     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673703790846.png
-     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673786096911.png
-     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673788325476.png
-     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673788305403.png
-     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673788286055.png
-     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673788276020.png
-     - http://roj0q7xhu.hn-bkt.clouddn.com/%E7%BE%8E%E5%9B%BE/1673788266140.png
+     - https://c2.im5i.com/2023/01/16/YslkL.png
+     - https://c2.im5i.com/2023/01/16/Ysdsj.png
+     - https://c2.im5i.com/2023/01/16/YsVCD.png
+     - https://c2.im5i.com/2023/01/16/YsKAP.png
+     - https://c2.im5i.com/2023/01/16/YsG52.png
+     - https://c2.im5i.com/2023/01/16/Ysgg7.png
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -532,13 +530,13 @@ background:
   - url(https://s2.loli.net/2023/01/14/GyeDFsnMCrQkSYf.jpg)
 
 # Footer Background
-footer_bg: false
+footer_bg: true
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
 
 # Enter transitions (開啓網頁進入效果)
-enter_transitions: true
+enter_transitions: false
 
 # Background effects (背景特效)
 # --------------------------------------
@@ -555,7 +553,7 @@ canvas_ribbon:
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
-  enable: false
+  enable: ture
   mobile: false
 
 # canvas_nest
@@ -578,7 +576,7 @@ activate_power_mode:
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
-  enable: false
+  enable: true
   zIndex: 9999 # -1 or 9999
   mobile: false
 
@@ -600,7 +598,7 @@ ClickShowText:
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
-display_mode: light
+display_mode: dark
 
 # Beautify (美化頁面顯示)
 beautify:
@@ -631,7 +629,7 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # Effect Speed Options (打字效果速度參數)
@@ -646,7 +644,7 @@ subtitle:
   # source: 2  調用一句網（簡體） http://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: false
+  source: 1
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
 
@@ -953,6 +951,7 @@ envelope_comment:
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">   # 引用custom.css
     # - <link rel="stylesheet" href="/xxx.css">
     # Aplayer 的全局吸底音乐标签收起隐藏
     - '<style type="text/css">
