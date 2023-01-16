@@ -8,8 +8,8 @@ menu:
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  列表||fas fa-list:
-    音乐: /music/ || fas fa-music
+  # 列表||fas fa-list:
+    # 音乐: /music/ || fas fa-music
     # 电影: /movies/ || fas fa-video
   留言板: /comments/ || fas fa-envelope
   链接: /link/ || fas fa-link
@@ -78,7 +78,7 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://macimg.com/image/UG6Tbp
+favicon: https://c2.im5i.com/2023/01/16/YsB9q.png
 
 # Avatar (頭像)
 avatar:
